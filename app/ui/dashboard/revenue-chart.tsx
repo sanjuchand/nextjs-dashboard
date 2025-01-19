@@ -8,6 +8,15 @@ import { lusitana } from '@/app/ui/fonts';
 // https://www.chartjs.org/
 // https://airbnb.io/visx/
 
+// Define or import the LatestInvoice type
+type Revenue = {
+  id: string;
+  // Add other properties as needed
+  amount: number;
+  date: string;
+  status: string;
+};
+
 export default async function RevenueChart({
   revenue,
 }: {
